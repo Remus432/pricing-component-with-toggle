@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Pricing Component</title>
+</head>
+<body>
+  
+  <div class="pricing">
+    <img class="pricing__graphic-top" src="./images/bg-top.svg" />
+    <h1 class="pricing__headline">Our Pricing</h1>
+    <div class="pricing__toggle">
+      <span>Monthly</span>
+      <label for="togglePricing">
+        <div class="pricing__toggle-btn">
+          <div class="pricing__toggle-btn-circle off"></div>
+          <input id="togglePricing" type="checkbox" />
+        </div>
+      </label>
+      <span>Annually</span>
+    </div>
+    <div class="pricing__grid">
+      <div class="pricing__card">
+        <h2 class="pricing__card-headline">Basic</h2>
+        <div class="pricing__card-amount">
+          <span class="pricing__card-amount-currency">$</span>
+          <span class="pricing__card-amount-value first-price">19.99</span>
+        </div>
+        <ul class="pricing__card-list">
+          <li class="pricing__card-list-feature">500 GB Storage</li>
+          <li class="pricing__card-list-feature">2 Users Allowed</li>
+          <li class="pricing__card-list-feature">Send up to 3GB</li>
+        </ul>
+        <button class="pricing__card-btn">LEARN MORE</button>
+      </div>
+      <div class="pricing__card white">
+        <h2 class="pricing__card-headline">Professional</h2>
+        <div class="pricing__card-amount">
+          <span class="pricing__card-amount-currency">$</span>
+          <span class="pricing__card-amount-value second-price">24.99</span>
+        </div>
+        <ul class="pricing__card-list">
+          <li class="pricing__card-list-feature">1 TB torage</li>
+          <li class="pricing__card-list-feature">5 Users Allowed</li>
+          <li class="pricing__card-list-feature">Send up to 10GB</li>
+        </ul>
+        <button class="pricing__card-btn">LEARN MORE</button>
+      </div>
+      <div class="pricing__card">
+        <h2 class="pricing__card-headline">Master</h2>
+        <div class="pricing__card-amount">
+          <span class="pricing__card-amount-currency">$</span>
+          <span class="pricing__card-amount-value third-price">39.99</span>
+        </div>
+        <ul class="pricing__card-list">
+          <li class="pricing__card-list-feature">2 TB Storage</li>
+          <li class="pricing__card-list-feature">10 Users Allowed</li>
+          <li class="pricing__card-list-feature">Sent up to 20GB</li>
+        </ul>
+        <button class="pricing__card-btn">LEARN MORE</button>
+      </div>
+    </div>
+    <img class="pricing__graphic-bottom" src="./images/bg-bottom.svg" />
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

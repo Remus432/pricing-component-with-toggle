@@ -1,0 +1,137 @@
+.pricing
+  display: flex
+  flex-direction: column
+  padding: 8rem
+
+  &__headline
+    color: $grayish-blue
+    align-self: center
+
+  &__toggle
+    align-self: center
+    display: flex
+    align-items: center
+    margin-top: 2rem
+    margin-bottom: 4rem
+    color: $very-light-grayish-blue
+
+    &-btn
+      width: 35px
+      height: 20px
+      background-image: $gradient
+      border-radius: 35px
+      cursor: pointer
+      margin: 0 2rem
+      position: relative
+
+      &-circle
+        width: 15px
+        height: 15px
+        background-color: #fff
+        border-radius: 50%
+        box-shadow: 2px 0px 5px rgba(darken(hsl(237, 63%, 64%), 20%), .7)
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translate(3px, -50%)
+        transition: all .3s ease-in-out
+
+      & input
+        display: none
+
+  &__graphic
+    &-top
+      position: absolute
+      top: 0
+      right: -35%
+      z-index: -1
+    
+    &-bottom
+      position: absolute
+      display: none
+  
+  &__card
+    background-color: #fff
+    border-radius: 8px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 4rem 0
+    padding: 4rem
+
+    &:nth-of-type(3)
+      margin-bottom: 1rem
+
+    &-headline
+      font-size: 1.5rem
+      color: $grayish-blue
+    
+    &-list
+      width: 100%
+      text-align: center
+
+      &-feature
+        list-style: none
+        color: $grayish-blue
+        padding: 1.25rem 0
+        border-top: 1px solid $very-light-grayish-blue
+
+        &:nth-of-type(3)
+          border-bottom: 1px solid $very-light-grayish-blue
+
+    &-amount
+      margin: 2rem 0
+      font-size: 5rem
+      color: $dark-grayish-blue
+      display: flex
+      align-items: center
+
+      &-currency
+        font-size: 3rem
+    
+    &-btn
+      background-image: $gradient
+      border: none
+      border: 1px solid rgba(0, 0, 0, 0)
+      border-radius: 6px
+      color: #fff
+      cursor: pointer
+      margin-top: 3rem
+      padding: 1.5rem
+      width: 100%
+      font-weight: bold
+
+      &:hover
+        border: 1px solid $grayish-blue
+        background: none
+        color: hsl(237, 63%, 64%)
+
+.white
+  background-image: $gradient
+  
+  & h2,
+  & span,
+  & li
+    color: #fff
+  
+  & li
+    border-top: 1px solid #fff
+
+    &:nth-of-type(3)
+      border-bottom: 1px solid #fff
+  
+  & button
+    background: linear-gradient(to right, #fff, #fff)
+    color: hsl(237, 63%, 64%)
+
+    &:hover
+      border: 1px solid #fff
+      color: #fff
+
+
+.off
+  transform: translate(3px, -50%)
+
+.on
+  transform: translate(17px, -50%)
